@@ -1,0 +1,176 @@
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>Firebrand Media Email Newsletter</title>
+   <style type="text/css" media="screen">
+         body {
+            margin: 0;
+            padding: 10px 0 0 0;
+            border-top: 4px solid #263441;
+            background: #fff url('http://firebrand-media.com/email/client_list/01.gif') repeat left top;
+         }
+
+         a {
+            font-family: Arial;
+            font-size: 11px;
+            font-weight: normal;
+            color: #c5162f;
+         }
+
+         p {
+            font-family: Arial;
+            font-size: 11px;
+            font-weight: normal;
+            color: #333333;
+            background-color: #fff;
+         }
+
+         h3 {
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: bold;
+            color: #667C82;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 0;
+         }
+
+         table.back {
+            background-color: none;
+         }
+
+         table.main {
+            background-color: #fff;
+         }
+
+         td.permission a {
+            font-family: Arial;
+            font-size: 11px;
+            font-weight: normal;
+         }
+
+         td.header h1 {
+            font-family: Arial;;
+            font-size: 38px;
+            font-weight: bold;
+            color: #667C82;
+            text-transform: uppercase;
+            display: inline;
+         }
+
+         td.sidebar ul {
+            margin: 0 0 0 24px;
+            padding: 0;
+         }
+
+         td.sidebar ul a {
+            text-decoration: none;
+         }
+
+         td.sidebar p {
+            font-family: Arial;
+            font-size: 13px;
+            font-weight: normal;
+            color: #4c4c4c;
+            margin: 10px 0 0 0;
+            padding: 10px;
+         }
+
+         td.sidebar img.image {
+         	 border: 2px solid #B2B2B2;
+         }
+
+         td.mainbar h2 {
+            font-family: Arial;
+            background-color: #263441;
+            color: #fff;
+            padding: 11px;
+            margin: 10px -20px 10px -15px;
+            border-left: 10px solid #667C82;
+            font-size: 1.125em; /* 18px / 16px */
+            font-weight: bold;
+         }
+
+         td.mainbar h2 a {
+            font-family: Arial;
+            font-size: 22px;
+            font-weight: normal;
+            color: #000000;
+            text-decoration: none;
+         }
+
+         td.mainbar p {
+            font-family: Arial;
+            font-size: 13px;
+            font-weight: normal;
+            color: #4c4c4c;
+            margin: 10px 0 0 0;
+            padding: 10px;
+         }
+
+         td.mainbar p.top a {
+            font-size: 10px;
+         }
+      </style>
+    </head>
+    <body>
+        <p><a name="top" id="top"></a></p>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tbody>
+                <tr>
+                    <td align="center">
+                    <table width="600" border="0" cellspacing="0" cellpadding="0" class="back">
+                        <tbody>
+                            <tr>
+                                <td align="center">
+                                <table width="580" border="0" cellspacing="10" cellpadding="0" class="main">
+                                     <tbody>
+                                        <tr>
+                                            <td class="header" align="left">
+                                            <table width="100%" height="90" border="0" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><img width="585" height="74" alt="Firebrand Media" src="http://firebrand-media.com/email/client_list/header_sorta.png" /></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td width="600" class="mainbar" align="left" valign="top">
+                                                        {exp:channel:entries channel="email"}
+                                                        <h2>{title}</h2>
+                                                        <p>{email_body}</p>
+                                                        {/exp:channel:entries}
+                                                         </td>
+
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="80" class="footer" align="center"><img width="580" height="29" alt="Small Hr" src="http://firebrand-media.com/email/client_list/hr.gif" />
+                                            <p>Click here to unsubscribe: {unsubscribe_url}</p>
+                                            <p><img align="top" alt="Firebrand Media on Flickr" src="http://firebrand-media.com/images/li/phone_li_dark.png" /> 304-839-9583 | <img align="absmiddle" src="http://firebrand-media.com/images/li/email_li_dark.png" /> <a href="mailto:gbrad@firebrand-media.com"> gbrad@firebrand-media.com</a> | <a href="http://firebrand-media.com">Firebrand Media</a></p>
+                                            <p><a href="http://twitter.com/firebrandmedia"><img align="absmiddle" alt="Firebrand Media on Twitter" src="http://firebrand-media.com/email/client_list/twitter_li_dark.png" /></a> <a href="http://www.linkedin.com/in/gbradhopkins"><img align="absmiddle" alt="Firebrand Media on LinkedIn" src="http://firebrand-media.com/email/client_list/linkedin_li_dark.png" /></a> <a href="http://www.flickr.com/firebrandmedia"><img align="absmiddle" alt="Firebrand Media on Flickr" src="http://firebrand-media.com/email/client_list/flickr_li_dark.png" /></a> <a href="http://facebook.com/firebrandmedia"><img align="absmiddle" alt="Firebrand Media on Facebook" src="http://firebrand-media.com/images/li/facebook_li_dark.png" /></a></p>
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+/* @override
+	http://firebrand-media.com/css/icon-cloud.css */
+
+@charset "UTF-8";
+
+ @font-face {
+  font-family: 'icon-cloud';
+  src: url('../font/icon-cloud.eot?36332765');
+  src: url('../font/icon-cloud.eot?36332765#iefix') format('embedded-opentype'),
+       url('../font/icon-cloud.woff?36332765') format('woff'),
+       url('../font/icon-cloud.ttf?36332765') format('truetype'),
+       url('../font/icon-cloud.svg?36332765#icon-cloud') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'icon-cloud';
+    src: url('../font/icon-cloud.svg?36332765#icon-cloud') format('svg');
+  }
+}
+*/
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "icon-cloud";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  margin: 5px 0 0 -22px;
+  padding: 0 10px 0 0;
+  display: block;
+  float: left;
+
+  /*display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;*/
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - magrins should be symmetric */
+  /* remove if not needed */
+
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-cloud:before { content: '\2601'; } /* '☁' */
+.icon-heart:before { content: '\2665'; } /* '♥' */
+.icon-print:before { content: '\e058'; } /* '' */
+.icon-fire:before { content: '\e0e7'; } /* '' */
+.icon-eye:before { content: '\e70a'; } /* '' */
+.icon-retweet:before { content: '\e717'; } /* '' */
+.icon-map:before { content: '\e727'; } /* '' */
+.icon-compass:before { content: '\e728'; } /* '' */
+.icon-chart-pie:before { content: '\e751'; } /* '' */
+.icon-left-open:before { content: '\e75d'; } /* '' */
+.icon-mobile:before { content: '\f10b'; } /* '' */
+.icon-google-circles:before { content: '\f351'; } /* '' */
+.icon-lamp:before { content: '💡'; } /* '\1f4a1' */
+.icon-calendar:before { content: '📅'; } /* '\1f4c5' */
