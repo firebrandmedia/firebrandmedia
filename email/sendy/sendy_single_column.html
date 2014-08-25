@@ -7,12 +7,12 @@
             margin: 0;
             padding: 10px 0 0 0;
             border-top: 4px solid #263441;
-            background: #fff url('http://firebrand-media.com/email/client_list/01.gif') repeat left top;
+            background: #fff url('http://firebrand-media.com/email/sendy/background.gif') repeat left top;
          }
 
          a {
             font-family: Arial;
-            font-size: 11px;
+/*            font-size: 11px;*/
             font-weight: normal;
             color: #c5162f;
          }
@@ -105,7 +105,7 @@
             font-weight: normal;
             color: #4c4c4c;
             margin: 10px 0 0 0;
-            padding: 10px;
+            padding: 5px;
          }
 
          td.mainbar p.top a {
@@ -130,7 +130,7 @@
                                             <table width="100%" height="90" border="0" cellspacing="0" cellpadding="0">
                                                 <tbody>
                                                     <tr>
-                                                        <td><img width="585" height="74" alt="Firebrand Media" src="http://firebrand-media.com/email/client_list/header_sorta.png" /></td>
+                                                        <td><img width="585" height="74" alt="Firebrand Media" src="http://firebrand-media.com/email/sendy/header_sorta.png" /></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -142,9 +142,17 @@
                                                 <tbody>
                                                     <tr>
                                                         <td width="600" class="mainbar" align="left" valign="top">
-                                                        {exp:channel:entries channel="email"}
-                                                        <h2>{title}</h2>
-                                                        <p>{email_body}</p>
+                                                        {exp:channel:entries channel="fire_starters"}
+                                                        <img width="100%" src="{fire_starters_header_image}" />
+                                                        {fire_starters_content}
+                                                            {heading}
+                                                                {value}
+                                                            {/heading}
+                                                            {rich_text}
+                                                               {value}
+                                                            {/rich_text}
+                                                        {/fire_starters_content}
+
                                                         {/exp:channel:entries}
                                                          </td>
 
@@ -155,10 +163,10 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td height="80" class="footer" align="center"><img width="580" height="29" alt="Small Hr" src="http://firebrand-media.com/email/client_list/hr.gif" />
+                                            <td height="80" class="footer" align="center"><img width="580" height="29" alt="Small Hr" src="http://firebrand-media.com/email/sendy/hr.gif" />
                                             <p><unsubscribe>Unsubscribe here</unsubscribe> | <webversion>View web version</webversion></p>
                                             <p><img align="top" alt="Firebrand Media on Flickr" src="http://firebrand-media.com/images/li/phone_li_dark.png" /> 304-839-9583 | <img align="absmiddle" src="http://firebrand-media.com/images/li/email_li_dark.png" /> <a href="mailto:gbrad@firebrand-media.com"> gbrad@firebrand-media.com</a> | <a href="http://firebrand-media.com">Firebrand Media</a></p>
-                                            <p><a href="http://twitter.com/firebrandmedia"><img align="absmiddle" alt="Firebrand Media on Twitter" src="http://firebrand-media.com/email/client_list/twitter_li_dark.png" /></a> <a href="http://www.linkedin.com/in/gbradhopkins"><img align="absmiddle" alt="Firebrand Media on LinkedIn" src="http://firebrand-media.com/email/client_list/linkedin_li_dark.png" /></a> <a href="http://www.flickr.com/firebrandmedia"><img align="absmiddle" alt="Firebrand Media on Flickr" src="http://firebrand-media.com/email/client_list/flickr_li_dark.png" /></a> <a href="http://facebook.com/firebrandmedia"><img align="absmiddle" alt="Firebrand Media on Facebook" src="http://firebrand-media.com/images/li/facebook_li_dark.png" /></a></p>
+                                            <p><a href="http://twitter.com/firebrandmedia"><img align="absmiddle" alt="Firebrand Media on Twitter" src="http://firebrand-media.com/email/sendy/twitter_li_dark.png" /></a> <a href="http://www.linkedin.com/in/gbradhopkins"><img align="absmiddle" alt="Firebrand Media on LinkedIn" src="http://firebrand-media.com/email/sendy/linkedin_li_dark.png" /></a> <a href="http://www.flickr.com/firebrandmedia"><img align="absmiddle" alt="Firebrand Media on Flickr" src="http://firebrand-media.com/email/sendy/flickr_li_dark.png" /></a> <a href="http://facebook.com/firebrandmedia"><img align="absmiddle" alt="Firebrand Media on Facebook" src="http://firebrand-media.com/images/li/facebook_li_dark.png" /></a></p>
                                             </td>
 
                                         </tr>
